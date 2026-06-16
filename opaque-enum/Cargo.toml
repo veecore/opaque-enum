@@ -12,7 +12,7 @@ keywords.workspace = true
 categories.workspace = true
 
 [dependencies]
-opaque-enum-macros = { path = "../opaque-enum-macros" }
+opaque-enum-macros = { version = "0.1.0", path = "../opaque-enum-macros" }
 
 [lints]
 workspace = true
