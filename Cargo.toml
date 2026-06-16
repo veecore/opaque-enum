@@ -1,0 +1,24 @@
+[workspace]
+members = ["opaque-enum", "opaque-enum-macros"]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+authors = ["Victor <veecore>"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/veecore/opaque-enum"
+homepage = "https://github.com/veecore/opaque-enum"
+description = "Attribute macro for hiding enum variants behind an opaque struct wrapper"
+readme = "README.md"
+keywords = ["enum", "macro", "opaque", "api-stability", "semver"]
+categories = ["rust-patterns", "development-tools::procedural-macro-helpers"]
+
+[workspace.lints.rust]
+missing_docs = "deny"
+unreachable_pub = "deny"
+
+[workspace.lints.clippy]
+all = { level = "deny", priority = -1 }
+pedantic = { level = "warn", priority = -1 }
+

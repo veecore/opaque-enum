@@ -1,0 +1,19 @@
+[package]
+name = "opaque-enum"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+description = "Attribute macro for hiding enum variants behind an opaque struct wrapper"
+readme = "../README.md"
+keywords.workspace = true
+categories.workspace = true
+
+[dependencies]
+opaque-enum-macros = { path = "../opaque-enum-macros" }
+
+[lints]
+workspace = true
+
